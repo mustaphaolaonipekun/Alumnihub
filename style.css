@@ -352,6 +352,7 @@ form ::placeholder {
   line-height: 24px;
   letter-spacing: 0%;
   cursor: pointer;
+  margin-bottom:5px;
 }
 
 .password {
