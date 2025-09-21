@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invite from School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="center">
+        <div class="invitefromschool">
+          <div class="text-container">
+            <div class="text">
+              <h3>
+                Hi 👋,
+                <br />
+                Andrew
+                <br />Ken-warisso !
+              </h3>
+              <div class="inv">
+                <div>
+                  <h4>You have been invited by school alumni</h4>
+                  <div class="image">
+                    <img src="images/Avatar.png" alt="" />
+                    <div>
+                      <h5>University Of Benin</h5>
+                      <p>The Whole Institution</p>
+                    </div>
+                  </div>
+                  <h4>on Alumnihub</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account">
+            <div class="account-header">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div>
+              <h1>Create Account</h1>
+              <p>Fill the Information below to Create your Account</p>
+            </div>
+            <form
+              action="mailto:aluminihub@gmail.com"
+              method="POST"
+              enctype="text/plain"
+              id="formSignup"
+            >
+              <div class="names">
+                <div>
+                  <h4>First Name</h4>
+                  <input type="text" placeholder="John" required />
+                </div>
+                <div>
+                  <h4>Last Name</h4>
+                  <input type="text" placeholder="Doe" required />
+                </div>
+              </div>
+
+              <div class="emails">
+                <h4>Email</h4>
+                <input
+                  type="email"
+                  placeholder="Johndoe@Alumnihub.com"
+                  required
+                />
+              </div>
+
+              <div class="phones">
+                <h4>Phone Number (Optional)</h4>
+                <div class="phone">
+                  <select id="code">
+                    <option value="+234">🇳🇬 +234</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                  </select>
+                  <input
+                    type="tel"
+                    placeholder="0000000000"
+                    pattern="[0-9]{10,15}"
+                    title="Phone number should be 11-15 digits"
+                    id="num"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="password">
+                <h4>Password</h4>
+                <div class="password-wrapper">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Secret Password"
+                    required
+                  />
+                  <i
+                    class="fa-solid fa-eye toggle-password"
+                    id="togglePassword"
+                  ></i>
+                </div>
+              </div>
+              <div class="password">
+                <h4>Confirm Password</h4>
+                <div class="password-wrapper">
+                  <input
+                    type="password"
+                    id="pass"
+                    placeholder="Enter Secret Password"
+                    required
+                  />
+                  <i
+                    class="fa-solid fa-eye toggle-password"
+                    id="confirmPassword"
+                  ></i>
+                </div>
+              </div>
+                  <p id="error">❌ Passwords do not match(Check)!</p>
+
+              <div class="already">
+                <h6>
+                  Already Have and Account
+                  <span><a href="accountcreated.html">Login Here </a></span>
+                </h6>
+              </div>
+
+              <button type="submit" id="register">Register Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
