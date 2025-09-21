@@ -28,7 +28,7 @@ body {
   /* margin-block: 235px;
   margin-inline: 152px; */
 
-  margin-top: 152px;
+/*   margin-top: 152px; */
 }
 .text-container {
   background-color: #f9fafb;
@@ -136,7 +136,9 @@ vertical-align: middle;
   opacity: 1;
   border-radius: 200px;
 }
-
+.account{
+  margin-left: 24px;
+}
 .account-header img {
   width: 96;
   height: 19.71891975402832;
