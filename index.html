@@ -46,25 +46,42 @@
             <div class="account-header">
               <img src="images/logo.png" alt="" />
             </div>
+            <!-- <div>
+              <h6>Hi 👋, <span> Johndoe@Alumniub.com </span></h6>
+            </div> -->
+            <div class="ivn">
+              <div>
+                <h2>Hi 👋, <span> Johndoe@Alumniub.com </span></h2>
+
+                <h3>You have been invited by school alumni</h3>
+                <div class="imaged">
+                  <img src="images/Avatar.png" alt="" />
+                  <div>
+                    <h5>University Of Benin</h5>
+                    <p>The Whole Institution</p>
+                  </div>
+                </div>
+                <h6>on Alumnihub</h6>
+              </div>
+            </div>
             <div>
               <h1>Create Account</h1>
               <p>Fill the Information below to Create your Account</p>
             </div>
-            <form
-              action="mailto:aluminihub@gmail.com"
-              method="POST"
-              id="formSignup"
-              enctype="text/plain"
-               autocomplete="on"
-            >
+            <form method="POST" enctype="text/plain" id="formSignup">
               <div class="names">
                 <div>
                   <h4>First Name</h4>
-                  <input type="text" placeholder="John" required />
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="John"
+                    required
+                  />
                 </div>
                 <div>
                   <h4>Last Name</h4>
-                  <input type="text" placeholder="Doe" required />
+                  <input type="text" id="lastName" placeholder="Doe" required />
                 </div>
               </div>
 
@@ -72,6 +89,7 @@
                 <h4>Email</h4>
                 <input
                   type="email"
+                  id="email"
                   placeholder="Johndoe@Alumnihub.com"
                   required
                 />
@@ -125,7 +143,7 @@
                   ></i>
                 </div>
               </div>
-                  <p id="error">❌ Passwords do not match(Check)!</p>
+              <p id="error">❌ Passwords do not match(Check)!</p>
 
               <div class="already">
                 <h6>
@@ -140,6 +158,7 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
+
   </body>
-  <script src="script.js"></script>
 </html>
