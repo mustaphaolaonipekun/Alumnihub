@@ -6,6 +6,7 @@
   --max-width: 1440px;
   --Black: #000000;
   --gray: #667085;
+  --grey: #101828;
   --white: #ffffff;
   --Blue: #2e90fa;
   --grays: #d0d5dd;
@@ -28,11 +29,12 @@ body {
   /* margin-block: 235px;
   margin-inline: 152px; */
 
-/*   margin-top: 152px; */
+  /* margin-top: 152px; */
 }
 .text-container {
   background-color: #f9fafb;
 }
+
 .text {
   margin-left: 45px;
   margin-top: 63px;
@@ -58,18 +60,7 @@ body {
   letter-spacing: -2%;
   vertical-align: middle;
 }
-/* .text span{
-font-family: Inter;
-font-weight: 700;
-font-style: Bold;
-font-size: 26.18px;
-color: var(--Black);
-line-height: 39.27px;
-letter-spacing: -2%;
-vertical-align: middle;
 
-
-} */
 .inv {
   margin-top: 23px;
   /* width: 454; */
@@ -98,7 +89,7 @@ vertical-align: middle;
   font-weight: 700;
   font-style: Bold;
   font-size: 18px;
-  color: var(--Black);
+  color: var(--grey);
   line-height: 28px;
   letter-spacing: 0%;
 }
@@ -110,6 +101,9 @@ vertical-align: middle;
   line-height: 20px;
   letter-spacing: 0%;
   color: var(--gray);
+}
+.ivn {
+  display: none;
 }
 .text h4 {
   font-family: Inter;
@@ -136,7 +130,7 @@ vertical-align: middle;
   opacity: 1;
   border-radius: 200px;
 }
-.account{
+.account {
   margin-left: 24px;
 }
 .account-header img {
@@ -253,6 +247,7 @@ form ::placeholder {
   padding-bottom: 10px;
   padding-left: 15px;
 }
+
 .emails {
   margin-top: 18px;
 }
@@ -262,7 +257,6 @@ form ::placeholder {
   opacity: 1;
   gap: 8px;
   border: 1px solid var(--grays);
-
   border-radius: 5px;
   border-width: 1px;
   padding-top: 10px;
@@ -352,29 +346,35 @@ form ::placeholder {
   line-height: 24px;
   letter-spacing: 0%;
   cursor: pointer;
-  margin-bottom:5px;
 }
 
 .password {
   margin-top: 18px;
 }
 .password-wrapper {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  border: 1px solid var(--grays);
+  border-radius: 5px;
+  border-width: 1px;
 }
 #password,
 #pass {
-  width: 393;
-  height: 44;
-  border: 1px solid var(--grays);
+  padding-block: 10px;
+  padding-inline: 15px;
+  flex-grow: 1;
+  border: none;
   opacity: 1;
   gap: 8px;
-  border-radius: 5px;
-  border-width: 1px;
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
 }
+
+ input:active, input:focus{
+   border: none;
+  outline: none;
+}
+
 .password-wrapper input::placeholder {
   font-family: Inter;
   font-weight: 400;
@@ -383,6 +383,16 @@ form ::placeholder {
   color: #98a2b3;
   line-height: 20px;
   letter-spacing: 0%;
+}
+.password-wrapper .toggle-password {
+  /* position: relative; */
+  /* right: 10px; */
+  /* top: 80%; */
+ 
+  cursor: pointer;
+  font-size: 16px;
+  color: #667085;
+  pointer-events: auto;
 }
 
 /* 
@@ -394,16 +404,8 @@ form ::placeholder {
 
 } */
 
-.password-wrapper .toggle-password {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 16px;
-  color: #667085;
-  pointer-events: auto;
-}
+
+
 
 #error {
   font-family: Inter;
@@ -414,4 +416,99 @@ form ::placeholder {
   line-height: 20px;
   letter-spacing: 0%;
   display: none;
+}
+
+@media (max-width: 480px) {
+  .text-container {
+    display: none;
+  }
+
+  .ivn {
+    display: block;
+    margin-top: 23px;
+    /* width: 454; */
+    opacity: 1;
+    gap: 8px;
+    /* border-radius: 10px; */
+    /* border-width: 1px; */
+    /* border: 1px solid #f2f4f7; */
+    /* padding: 16px; */
+    background-color: var(--white);
+    margin-block: 24px;
+    /* margin-right: 52px; */
+    margin-inline: 16px;
+  }
+  .ivn h2 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26.18px;
+    color: var(--Black);
+    line-height: 39.27px;
+    letter-spacing: -2%;
+    vertical-align: middle;
+  }
+  .ivn h2 span {
+    color: var(--Black);
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 26.18px;
+    line-height: 39.27px;
+    letter-spacing: -2%;
+    vertical-align: middle;
+  }
+  .ivn h3 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    color: var(--Black);
+    line-height: 17.85px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-top: 23.52px;
+  }
+  .ivn h6 {
+    margin-top: 10.71px;
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    color: var(--Black);
+    line-height: 17.85px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .ivn h5 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 10.71px;
+    line-height: 16.66px;
+    letter-spacing: 0%;
+    color: var(--grey);
+  }
+  .ivn p {
+    color: var(--gray);
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 8.33px;
+    line-height: 11.9px;
+    letter-spacing: 0%;
+  }
+  .imaged {
+    display: flex;
+    margin-right: 155.38px;
+    justify-content: space-around;
+    gap: 3.57px;
+    margin-top: 10.71px;
+  }
+  .imaged img {
+    width: 44px;
+    height: 44px;
+    border-color: 1px solid #d1e9ff;
+    opacity: 1;
+    border-radius: 200px;
+  }
 }
