@@ -201,11 +201,16 @@ body {
   height: 47.999996185302734;
   opacity: 1;
 }
+.frames{
+gap: 14px;
+
+}
 .frame img {
   width: 201px;
-  height: 134;
+  height: 60;
+  margin-bottom: -20px;
   opacity: 1;
-  gap: 14px;
+  /* gap: 14px; */
 }
 form {
   margin-top: 44px;
@@ -324,7 +329,7 @@ form ::placeholder {
   text-decoration-thickness: 0%;
   cursor: pointer;
 }
-#register {
+#registerBtn {
   width: 393;
   height: 44;
   border: 1px solid var(--Blue);
@@ -417,12 +422,36 @@ form ::placeholder {
   letter-spacing: 0%;
   display: none;
 }
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @media (max-width: 480px) {
   .text-container {
     display: none;
   }
-
+.account {
+  margin-left: 20px;
+  margin-right: 20px;
+}
   .ivn {
     display: block;
     margin-top: 23px;
@@ -512,3 +541,4 @@ form ::placeholder {
     border-radius: 200px;
   }
 }
+
