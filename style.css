@@ -2,6 +2,11 @@
   padding: 0;
   margin: auto;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   --max-width: 1440px;
   --Black: #000000;
@@ -130,9 +135,9 @@ body {
   opacity: 1;
   border-radius: 200px;
 }
-.account {
+/* .account {
   margin-left: 24px;
-}
+} */
 .account-header img {
   width: 96;
   height: 19.71891975402832;
@@ -224,6 +229,7 @@ form h4 {
   color: var(--gray);
   line-height: 20px;
   letter-spacing: 0%;
+  
 }
 form ::placeholder {
   color: #98a2b3;
@@ -251,6 +257,7 @@ form ::placeholder {
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
+  
 }
 
 .emails {
@@ -448,10 +455,10 @@ button:disabled {
   .text-container {
     display: none;
   }
-.account {
+/* .account {
   margin-left: 20px;
   margin-right: 20px;
-}
+} */
   .ivn {
     display: block;
     margin-top: 23px;
@@ -539,6 +546,12 @@ button:disabled {
     border-color: 1px solid #d1e9ff;
     opacity: 1;
     border-radius: 200px;
+  }
+  .text{
+    margin-inline: 20px;
+  }
+  .account{
+    margin-inline: 20px;
   }
 }
 
