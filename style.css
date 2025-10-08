@@ -383,7 +383,6 @@ form ::placeholder {
 }
 
  input:active, input:focus{
-   border: none;
   outline: none;
 }
 
